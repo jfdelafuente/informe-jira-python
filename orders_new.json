@@ -1,0 +1,1903 @@
+{
+    "expand": "schema,names",
+    "startAt": 0,
+    "maxResults": 50,
+    "total": 88,
+    "issues": [
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1797225",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1797225",
+            "key": "TIAFOS-579",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002773363",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1797173",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1797173",
+            "key": "TIAFOS-580",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10000",
+                    "id": "10000",
+                    "description": "Work has been completed on this issue.",
+                    "name": "Done"
+                },
+                "customfield_11104": "INC000002773363",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10001",
+                    "description": "",
+                    "iconUrl": "https://jira.si.orange.es/",
+                    "name": "Done",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1793852",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1793852",
+            "key": "MICRO-38614",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002774141",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1792686",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1792686",
+            "key": "COMPCOM-243",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002774141",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1792474",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1792474",
+            "key": "FCOM-19254",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002774141",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1794202",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1794202",
+            "key": "COMPCOM-247",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002774141",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1794363",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1794363",
+            "key": "MICRO-38618",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002774141",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1794936",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1794936",
+            "key": "ALTAMI-8484",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002775529",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1794733",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1794733",
+            "key": "ALTAMI-8482",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002775529",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1794818",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1794818",
+            "key": "MICRO-38631",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002775529",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1794674",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1794674",
+            "key": "MICRO-38638",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10000",
+                    "id": "10000",
+                    "description": "Work has been completed on this issue.",
+                    "name": "Done"
+                },
+                "customfield_11104": "INC000002775529",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10001",
+                    "description": "",
+                    "iconUrl": "https://jira.si.orange.es/",
+                    "name": "Done",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1824123",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1824123",
+            "key": "TEI-4785",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10000",
+                    "id": "10000",
+                    "description": "Work has been completed on this issue.",
+                    "name": "Done"
+                },
+                "customfield_11104": "INC000002775647",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10001",
+                    "description": "",
+                    "iconUrl": "https://jira.si.orange.es/",
+                    "name": "Done",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1831529",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1831529",
+            "key": "ALTAMI-8505",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002775902",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1793385",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1793385",
+            "key": "ARTALT-11006",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10000",
+                    "id": "10000",
+                    "description": "Work has been completed on this issue.",
+                    "name": "Done"
+                },
+                "customfield_11104": "INC000002775902",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10001",
+                    "description": "",
+                    "iconUrl": "https://jira.si.orange.es/",
+                    "name": "Done",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1810214",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1810214",
+            "key": "BOREAL-1782",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10000",
+                    "id": "10000",
+                    "description": "Work has been completed on this issue.",
+                    "name": "Done"
+                },
+                "customfield_11104": "INC000002778573",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10001",
+                    "description": "",
+                    "iconUrl": "https://jira.si.orange.es/",
+                    "name": "Done",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1813806",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1813806",
+            "key": "VICOWE-339",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": null,
+                "customfield_11104": "INC000002779849",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10306",
+                    "description": "",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Test",
+                    "id": "10306",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/4",
+                        "id": 4,
+                        "key": "indeterminate",
+                        "colorName": "yellow",
+                        "name": "In Progress"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1823790",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1823790",
+            "key": "INTEPS-6037",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002780873",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1825035",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1825035",
+            "key": "INTEPS-6052",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002780873",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1824013",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1824013",
+            "key": "INTEPS-6034",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002780873",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1815088",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1815088",
+            "key": "INTEPS-5959",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002780873",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1815098",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1815098",
+            "key": "TEI-4718",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002780873",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1815199",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1815199",
+            "key": "COMPCOM-261",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002780873",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1811132",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1811132",
+            "key": "FRONTGP-14774",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002780873",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1811123",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1811123",
+            "key": "FDCOSP-516",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002780873",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1811136",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1811136",
+            "key": "COMPCOM-258",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002780873",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1825036",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1825036",
+            "key": "INTEPS-6054",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10000",
+                    "id": "10000",
+                    "description": "Work has been completed on this issue.",
+                    "name": "Done"
+                },
+                "customfield_11104": "INC000002780873",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10001",
+                    "description": "",
+                    "iconUrl": "https://jira.si.orange.es/",
+                    "name": "Done",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1823904",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1823904",
+            "key": "COMPCOM-262",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002782980",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1823112",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1823112",
+            "key": "MICRO-39072",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002782980",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1823086",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1823086",
+            "key": "INTEPS-6027",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002782980",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1822726",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1822726",
+            "key": "MICRO-39014",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002782980",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1813780",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1813780",
+            "key": "COMPCOM-260",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002782980",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1822639",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1822639",
+            "key": "INTEPS-6025",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002782980",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1817284",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1817284",
+            "key": "FCOM-19634",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002782980",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1824096",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1824096",
+            "key": "FCOM-19662",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002782980",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1829365",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1829365",
+            "key": "PAEOSP-14849",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002783037",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1829383",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1829383",
+            "key": "MICRO-39230",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002783037",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1823912",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1823912",
+            "key": "MICRO-39074",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002783037",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1823973",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1823973",
+            "key": "INTEPS-6036",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002783037",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1825300",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1825300",
+            "key": "PAEOSP-14838",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002783037",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1817724",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1817724",
+            "key": "MICRO-38946",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002783037",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1824590",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1824590",
+            "key": "MICRO-39101",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002783037",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1822602",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1822602",
+            "key": "MICRO-39013",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002783037",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1822441",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1822441",
+            "key": "INTEPS-6016",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002783037",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1814536",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1814536",
+            "key": "PAEOSP-14809",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002783037",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1822645",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1822645",
+            "key": "INTEPS-6026",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002783037",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1822298",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1822298",
+            "key": "INTEPS-6020",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002783037",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1829022",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1829022",
+            "key": "MICRO-39206",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002783037",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1818026",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1818026",
+            "key": "MICRO-38948",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002783037",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1817810",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1817810",
+            "key": "PAEOSP-14825",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10001",
+                    "id": "10001",
+                    "description": "This issue won't be actioned.",
+                    "name": "Won't Do"
+                },
+                "customfield_11104": "INC000002783037",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10400",
+                    "description": "Cuando un proceso ha sido cancelado en su desarrollo",
+                    "iconUrl": "https://jira.si.orange.es/images/icons/statuses/generic.png",
+                    "name": "Cancelled",
+                    "id": "10400",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        },
+        {
+            "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+            "id": "1831536",
+            "self": "https://jira.si.orange.es/rest/api/latest/issue/1831536",
+            "key": "PAEOSP-14854",
+            "fields": {
+                "issuetype": {
+                    "self": "https://jira.si.orange.es/rest/api/2/issuetype/10004",
+                    "id": "10004",
+                    "description": "A problem which impairs or prevents the functions of the product.",
+                    "iconUrl": "https://jira.si.orange.es/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                    "name": "Bug",
+                    "subtask": false,
+                    "avatarId": 10303
+                },
+                "resolution": {
+                    "self": "https://jira.si.orange.es/rest/api/2/resolution/10000",
+                    "id": "10000",
+                    "description": "Work has been completed on this issue.",
+                    "name": "Done"
+                },
+                "customfield_11104": "INC000002783037",
+                "status": {
+                    "self": "https://jira.si.orange.es/rest/api/2/status/10001",
+                    "description": "",
+                    "iconUrl": "https://jira.si.orange.es/",
+                    "name": "Done",
+                    "id": "10001",
+                    "statusCategory": {
+                        "self": "https://jira.si.orange.es/rest/api/2/statuscategory/3",
+                        "id": 3,
+                        "key": "done",
+                        "colorName": "green",
+                        "name": "Done"
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -26,7 +26,13 @@ def main():
             lista_inc.append(row_inc)
             lista_bug.append(jira)
             lista_status.append(status_escape)
-    
+            
+    # imprimimos por pantalla los bugs en un string
+    string_lista_bug = ""
+    for i in lista_bug:
+        string_lista_bug = string_lista_bug + ", " + i
+    print(string_lista_bug)
+  
     df_salida['Incidencias'] = lista_inc
     df_salida['Bugs'] = lista_bug
     df_salida['Status'] = lista_status
