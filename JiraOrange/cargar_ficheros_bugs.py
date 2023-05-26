@@ -29,9 +29,7 @@ def main():
             df_salida = pd.concat([df_salida, new_salida])
 
     
-    # df_filtrado = df_salida[df_salida["Status"]!= "Cancelled / Won't Do"]
     df_filtrado = transform(df_salida)
-    # df_filtrado.to_csv(nom_excel, sep=';', encoding='utf-8', index=False)
     load_to_csv(configD.DIR_JIRA_OUT + 'bugs_out.csv', df_filtrado)
 
     mostrar_bugs(df_filtrado)
