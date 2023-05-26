@@ -1,7 +1,9 @@
 import pandas as pd
+import configD
 
 archivo = 'bugs.xlsx'
 archivo_salida = 'bugs_out.csv'
+
 
 def main():
 
@@ -9,8 +11,11 @@ def main():
     lista_bug = []
     lista_status = []
     df_salida = pd.DataFrame()
-    df = pd.read_excel(archivo)
+    
+    ''' Cargamos el ficheor de entrada en un DataFrame '''
+    df = pd.read_excel(configD.DIR_JIRA_IN + archivo)
   
+    ''' Recorremos el DataFrame para separar el campo Bugs en los campos Bugs y Status '''
     for index, row in df.iterrows():
         # print("Incidencia: %s  -  Bugs: %s " % (row['Incidencia'], row['Bug']))
         row_inc = row['Incidencia']
@@ -27,18 +32,20 @@ def main():
             lista_bug.append(jira)
             lista_status.append(status_escape)
             
+       
     # imprimimos por pantalla los bugs en un string
     string_lista_bug = ""
     for i in lista_bug:
         string_lista_bug = string_lista_bug + ", " + i
     print(string_lista_bug)
+
   
     df_salida['Incidencias'] = lista_inc
     df_salida['Bugs'] = lista_bug
     df_salida['Status'] = lista_status
     print(df_salida)
-    
-    df_salida.to_csv(archivo_salida, sep=';', encoding='utf-8', index=False)
+    ''' Volcamos la informacion en el fichero de salida '''
+    df_salida.to_csv(configD.DIR_JIRA_OUT + archivo_salida, sep=';', encoding='utf-8', index=False)
 
 if __name__ == '__main__':
     main()

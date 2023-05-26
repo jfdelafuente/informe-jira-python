@@ -1,10 +1,10 @@
 # Import the required libraries
 import requests
 from requests.auth import HTTPBasicAuth
-import json
 import pandas as pd
 import os
 from dotenv import load_dotenv
+import json
 
 class JiraAPIHandler(object):
     """
@@ -36,7 +36,8 @@ class JiraAPIHandler(object):
         # print(url)
         
         headers = {
-	        "Accept": "application/json"
+            "Accept": "application/json",
+            "Content-Type": "application/json"
         }
         
         auth = HTTPBasicAuth(self.usuario, 
@@ -67,6 +68,20 @@ class JiraAPIHandler(object):
         body = self._make_call(self.JIRA_SEARCH_ENDPOINT, **query_args)
         return body
     
+    def get_bug_to_json(self, epsilon):
+        query_args = {
+            'jql': 'Type = Bug AND ("Remedy HD" ~ ' +epsilon+ ')',
+            'fields': 'customfield_11104, issuetype, status, resolution',
+            'startAt' : '0',
+            'maxResult': '500'
+        }
+        # print(json.dumps(query_args, sort_keys=True, indent=4, separators=(",", ": ")))
+        response = self._make_call(self.JIRA_SEARCH_ENDPOINT, **query_args)
+        if response.status_code == 200:
+            issue = json.loads(response.text)
+            # print(json.dumps(issue, sort_keys=True, indent=4, separators=(",", ": ")))
+        return response.status_code, issue
+    
     def get_bug(self, epsilon):
         query_args = {
             'jql': 'Type = Bug AND ("Remedy HD" ~ ' +epsilon+ ')',
@@ -94,5 +109,15 @@ class JiraAPIHandler(object):
             'maxResult': '500'
         }
         # print(json.dumps(query_args, sort_keys=True, indent=4, separators=(",", ": ")))
+        body = self._make_call(self.JIRA_SEARCH_ENDPOINT, **query_args)
+        return body
+    
+    def get_delivs(self, sJQL):
+        query_args = {
+            'jql': '' + sJQL + '',
+            'fields' : 'issuekey, status, resolution, created, updated, resolutiondate, customfield_18505,customfield_12107,customfield_14405,customfield_22300,customfield_11105,customfield_11104,customfield_16304, issue_actions',
+            'startAt' : '0',
+            'maxResult': '500'
+        }
         body = self._make_call(self.JIRA_SEARCH_ENDPOINT, **query_args)
         return body
