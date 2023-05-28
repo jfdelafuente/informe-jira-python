@@ -6,11 +6,11 @@ def extract_from_csv(file_to_process) -> pd.DataFrame:
     dataframe = pd.read_csv(file_to_process) 
     return dataframe
 
-def extract_from_json(file_to_process) -> pd.DataFrame:
+def extract_from_json(file_to_process):
     dataframe = pd.read_json(file_to_process, lines=True)
     return dataframe
 
-def extract_from_excel(file_to_process) -> pd.DataFrame: 
+def extract_from_excel(file_to_process) -> pd.DataFrame:
     dataframe = pd.read_excel(file_to_process) 
     return dataframe
 

@@ -78,9 +78,9 @@ class JiraAPIHandler(object):
         # print(json.dumps(query_args, sort_keys=True, indent=4, separators=(",", ": ")))
         response = self._make_call(self.JIRA_SEARCH_ENDPOINT, **query_args)
         if response.status_code == 200:
-            issue = json.loads(response.text)
+            bugs = json.loads(response.text)
             # print(json.dumps(issue, sort_keys=True, indent=4, separators=(",", ": ")))
-        return response.status_code, issue
+        return response.status_code, bugs
     
     def get_bug(self, epsilon):
         query_args = {

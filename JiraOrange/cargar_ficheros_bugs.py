@@ -3,7 +3,8 @@ import os
 import json
 import pandas as pd
 from utils.utils import load_to_csv, mostrar_bugs
-from etl.transform import transform, transformar_bugs
+from etl.transform import transform
+from etl.parser import parsear_bugs
    
 
 def main():
@@ -24,7 +25,7 @@ def main():
         print("Cargando ... %s " % images)
         with open(directorio + images) as archivo:
             datos = json.load(archivo)
-            dict_metrics['Incidencias'], dict_metrics['Bugs'], dict_metrics['Status'] = transformar_bugs(datos)
+            dict_metrics['Incidencias'], dict_metrics['Bugs'], dict_metrics['Status'] = parsear_bugs(datos)
             new_salida = pd.DataFrame(dict_metrics)
             df_salida = pd.concat([df_salida, new_salida])
 

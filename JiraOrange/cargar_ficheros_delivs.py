@@ -1,10 +1,9 @@
 import configD
 import os
-import logging
 import json
 import pandas as pd
-from utils.utils import load_to_csv, mostrar_bugs
-from etl.transform import transformar_delivs
+from utils.utils import load_to_csv
+from etl.parser import parsear_delivs
 
 directorio = configD.DIR_JIRA_DELIVS
 imagenes = []
@@ -23,7 +22,7 @@ def main():
         print("Cargando ... %s " % images)
         with open(directorio + images) as archivo:
             datos = json.load(archivo)
-        lista_delivs += transformar_delivs(datos)
+        lista_delivs += parsear_delivs(datos)
         print("------------------")
         # print(json.dumps(lista_delivs, sort_keys=True, indent=4, separators=(",", ": ")))
 
