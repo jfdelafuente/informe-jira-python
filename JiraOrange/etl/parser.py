@@ -60,6 +60,7 @@ def parsear_delivs(datos:dict):
         dict_metrics["remedy HD"] = datos["fields"]["customfield_11104"]
         dict_metrics["summary"] = datos["fields"]["customfield_16304"][i]["fields"]["summary"]
         dict_metrics["bug"] = datos["fields"]["customfield_16304"][i]["key"]
+        # dict_metrics["entornos"] = datos["fields"]["customfield_16306"]
 
         lista_delivs.append(dict_metrics)
         # print(json.dumps(lista_delivs, sort_keys=True, indent=4, separators=(",", ": ")))

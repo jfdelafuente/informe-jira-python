@@ -12,7 +12,7 @@ def extract(file):
     return extracted_data
 
 def extract_delivs():
-    return extract(configD.DIR_JIRA_DELIVS + '/*.json')
+    return extract(configD.DIR_JIRA_DELIVS + '*.json')
 
 def extract_bugs() -> pd.DataFrame:
     return extract(configD.DIR_JIRA_BUGS + "*.json")
