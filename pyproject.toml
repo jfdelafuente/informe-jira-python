@@ -1,0 +1,117 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jira-etl"
+version = "1.0.0"
+description = "ETL para extraer, transformar y cargar datos de bugs y deliveries desde Jira"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Tu Nombre", email = "tu.email@example.com"}
+]
+keywords = ["jira", "etl", "data-pipeline", "bugs", "deliveries"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+dependencies = [
+    "certifi>=2025.11.12",
+    "charset-normalizer>=3.4.4",
+    "requests>=2.32.5",
+    "urllib3>=2.5.0",
+    "pandas>=2.0.3",
+    "numpy>=2.3.5",
+    "openpyxl>=3.1.5",
+    "et-xmlfile>=2.0.0",
+    "python-dateutil>=2.9.0",
+    "python-dotenv>=1.2.1",
+    "pytz>=2025.2",
+    "tzdata>=2025.2",
+    "idna>=3.11",
+    "six>=1.17.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "black>=23.0",
+    "flake8>=6.0",
+    "mypy>=1.0",
+    "isort>=5.12",
+]
+
+[project.scripts]
+jira-extract-bugs = "jira_etl.cli:extract_bugs"
+jira-extract-delivs = "jira_etl.cli:extract_deliveries"
+jira-process-bugs = "jira_etl.cli:process_bugs"
+jira-process-delivs = "jira_etl.cli:process_deliveries"
+jira-full-etl = "jira_etl.cli:run_full_etl"
+
+[project.urls]
+Homepage = "https://github.com/tu-usuario/jira-etl"
+Documentation = "https://github.com/tu-usuario/jira-etl/blob/main/README.md"
+Repository = "https://github.com/tu-usuario/jira-etl"
+Issues = "https://github.com/tu-usuario/jira-etl/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["jira_etl*"]
+exclude = ["tests*"]
+
+[tool.black]
+line-length = 100
+target-version = ['py38', 'py39', 'py310', 'py311']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 100
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+ensure_newline_before_comments = true
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q --strict-markers"
+testpaths = [
+    "tests",
+]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
