@@ -7,6 +7,7 @@ from .file_utils import (
     load_to_json
 )
 from .logger import setup_logging, get_logger
+from .output import OutputManager
 
 __all__ = [
     'extract_from_csv',
@@ -15,5 +16,6 @@ __all__ = [
     'load_to_csv',
     'load_to_json',
     'setup_logging',
-    'get_logger'
+    'get_logger',
+    'OutputManager'
 ]

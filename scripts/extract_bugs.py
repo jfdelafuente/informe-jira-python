@@ -26,102 +26,8 @@ from jira_etl.config import Config
 from jira_etl.api.client import JiraAPIHandler
 from jira_etl.utils.file_utils import extract_from_csv, load_to_json
 from jira_etl.utils.logger import setup_logging, get_logger
+from jira_etl.utils.output import OutputManager
 from jira_etl.etl.transform import Data_Quality
-
-# Intentar importar colorama para colores
-try:
-    from colorama import init, Fore, Style
-    init(autoreset=True)
-    HAS_COLORS = True
-except ImportError:
-    HAS_COLORS = False
-    class Fore:
-        GREEN = CYAN = YELLOW = RED = WHITE = MAGENTA = ""
-    class Style:
-        BRIGHT = RESET_ALL = DIM = ""
-
-
-class OutputManager:
-    """Gestor centralizado de salida con colores y thread-safety"""
-
-    def __init__(self, use_colors=True):
-        self.use_colors = use_colors and HAS_COLORS
-        self.lock = Lock()  # Para thread-safety en prints
-
-    def _print(self, msg, color="", style=""):
-        """Print thread-safe con colores opcionales"""
-        with self.lock:
-            if self.use_colors and color:
-                print(f"{color}{style}{msg}{Style.RESET_ALL}")
-            else:
-                print(msg)
-
-    def header(self, text):
-        """Imprime encabezado"""
-        sep = "=" * 60
-        if self.use_colors:
-            self._print(f"\n{sep}", Fore.CYAN, Style.BRIGHT)
-            self._print(text, Fore.CYAN, Style.BRIGHT)
-            self._print(sep, Fore.CYAN, Style.BRIGHT)
-        else:
-            self._print(f"\n{sep}")
-            self._print(text)
-            self._print(sep)
-
-    def section(self, text):
-        """Imprime sección"""
-        self._print(f"[+] {text}", Fore.YELLOW, Style.BRIGHT)
-
-    def success(self, text):
-        """Mensaje de éxito"""
-        self._print(f"  [OK] {text}", Fore.GREEN)
-
-    def skip(self, text):
-        """Mensaje de skip"""
-        self._print(f"  [SKIP] {text}", Fore.YELLOW)
-
-    def error(self, text):
-        """Mensaje de error"""
-        self._print(f"  [ERROR] {text}", Fore.RED)
-
-    def info(self, text):
-        """Mensaje informativo"""
-        self._print(f"{text}", Fore.CYAN)
-
-    def progress(self, current, total, incidencia, bugs, status="OK"):
-        """Muestra progreso con formato consistente"""
-        percentage = (current / total * 100) if total > 0 else 0
-
-        if status == "OK":
-            color = Fore.GREEN
-            symbol = "[OK]"
-        elif status == "SKIP":
-            color = Fore.YELLOW
-            symbol = "[SKIP]"
-        else:
-            color = Fore.RED
-            symbol = "[ERROR]"
-
-        msg = f"  {symbol} [{current}/{total}] {incidencia}: {bugs} bugs ({percentage:.1f}%)"
-        self._print(msg, color)
-
-    def summary(self, stats: Dict[str, Any]):
-        """Imprime resumen final"""
-        duration = stats.get('duration', 0)
-        processed = stats.get('processed', 0)
-        success = stats.get('success', 0)
-        failed = stats.get('failed', 0)
-        total_bugs = stats.get('total_bugs', 0)
-        throughput = processed / duration if duration > 0 else 0
-
-        self.header("RESUMEN FINAL")
-        self.info(f"  Incidencias procesadas: {processed}")
-        self.info(f"  Archivos generados: {Fore.GREEN}{success}{Style.RESET_ALL if self.use_colors else ''}")
-        self.info(f"  Fallidos: {Fore.RED}{failed}{Style.RESET_ALL if self.use_colors else ''}")
-        self.info(f"  Total bugs encontrados: {total_bugs}")
-        self.info(f"  Duracion: {duration:.2f} segundos")
-        self.info(f"  Rendimiento: {throughput:.2f} inc/seg")
-        self.info(f"  Ubicacion: {Config.BUGS_JSON_DIR}")
 
 
 def process_single_incidencia(
@@ -302,6 +208,7 @@ def main():
         # Calcular estadísticas
         duration = time.time() - start_time
         results['duration'] = duration
+        results['location'] = str(Config.BUGS_JSON_DIR)
 
         # Logging final
         logger.info("="*60)
@@ -312,7 +219,7 @@ def main():
         logger.info("="*60)
 
         # Mostrar resumen
-        output.summary(results)
+        output.summary(results, "RESUMEN FINAL - BUGS")
 
         return 0
 
