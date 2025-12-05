@@ -7,7 +7,7 @@ y genera un fichero JSON por cada delivery en el directorio 'data/json/deliverie
 
 Optimizaciones:
 - Procesamiento paralelo de escrituras
-- Mejor manejo de errores
+- Sistema de output eficiente con colores
 - Progress feedback en tiempo real
 - Carga dinámica de JQL desde archivo
 """
@@ -16,7 +16,7 @@ import json
 import time
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from typing import Dict, Any, List
+from typing import Dict, Any
 
 # Agregar src al path para imports
 sys.path.insert(0, str(Path(__file__).parent.parent / 'src'))
@@ -25,6 +25,7 @@ from jira_etl.config import Config
 from jira_etl.api.client import JiraAPIHandler
 from jira_etl.utils.file_utils import load_to_json
 from jira_etl.utils.logger import setup_logging, get_logger
+from jira_etl.utils.output import OutputManager
 
 
 def save_delivery(issue: Dict[str, Any], output_dir: Path) -> tuple:
@@ -75,6 +76,9 @@ PAEOSP-20552, TEDTED-8012, FCOM-25211, TEI-7951, FRONTRE-25415)'''
 
 def main():
     """Ejecuta el proceso de extracción de deliveries desde Jira (optimizado)"""
+    # Inicializar output manager
+    output = OutputManager(use_colors=True)
+
     # Configurar logging
     setup_logging('extract_deliveries.log')
     logger = get_logger(__name__)
@@ -83,25 +87,25 @@ def main():
     logger.info("Iniciando extracción OPTIMIZADA de deliveries desde Jira")
     logger.info("="*60)
 
+    output.header("EXTRACCION DE DELIVERIES DESDE JIRA")
+
     start_time = time.time()
     ficheros_procesados = 0
     ficheros_fallidos = 0
 
     try:
-        print("="*60)
-        print("[+] Extraccion de Deliveries desde Jira")
-        print("[+] Modo: Procesamiento paralelo optimizado")
-        print("="*60)
+        output.section("Configuracion")
+        output.info("  Modo: Procesamiento paralelo (max 10 workers)")
 
         # Inicializar cliente de Jira
         try:
             jira = JiraAPIHandler()
             logger.info("Cliente de Jira inicializado correctamente")
-            print("[+] Cliente Jira inicializado")
+            output.success("Cliente Jira inicializado")
         except ValueError as e:
             logger.error(f"Error de configuración: {e}")
-            print(f"ERROR: {e}")
-            print("Verifica que el archivo .env tenga USUARIO y PASS configurados")
+            output.error(str(e))
+            output.info("Verifica que el archivo .env tenga USUARIO y PASS configurados")
             return 1
 
         # Cargar JQL
@@ -109,7 +113,7 @@ def main():
         logger.info(f"JQL cargado: {sJQL[:100]}...")
 
         logger.info("Ejecutando consulta JQL para deliveries...")
-        print("\n[+] Consultando deliveries en Jira...")
+        output.section("Consultando deliveries en Jira")
 
         response = jira.get_delivs(sJQL)
 
@@ -120,13 +124,14 @@ def main():
                 total_issues = len(issues)
 
                 logger.info(f"Encontradas {total_issues} deliveries")
-                print(f"[+] Encontradas {total_issues} deliveries")
-                print(f"\n[+] Guardando archivos JSON en paralelo...")
+                output.success(f"Encontradas {total_issues} deliveries")
 
                 if total_issues == 0:
-                    print("\n[!] No se encontraron deliveries con el JQL especificado")
+                    output.warning("No se encontraron deliveries con el JQL especificado")
                     logger.warning("No se encontraron deliveries")
                     return 0
+
+                output.section(f"Guardando {total_issues} archivos JSON en paralelo")
 
                 # Procesar deliveries en paralelo
                 with ThreadPoolExecutor(max_workers=min(10, total_issues)) as executor:
@@ -142,58 +147,57 @@ def main():
 
                             if success:
                                 ficheros_procesados += 1
-                                status = "[OK]"
+                                status = "OK"
                                 logger.info(f"Generado: {filename}")
                             else:
                                 ficheros_fallidos += 1
-                                status = "[ERROR]"
+                                status = "ERROR"
                                 logger.error(f"Error generando {filename}: {message}")
 
                             # Progress feedback
-                            progress = idx / total_issues * 100
-                            print(f"  {status} [{idx}/{total_issues}] {filename} ({progress:.1f}%)")
+                            output.progress(idx, total_issues, filename, 0, status)
 
                         except Exception as e:
                             ficheros_fallidos += 1
                             key = issue.get("key", "UNKNOWN")
                             logger.error(f"Error procesando {key}: {e}")
-                            print(f"  [ERROR] [{idx}/{total_issues}] {key}: {str(e)}")
+                            output.error(f"[{idx}/{total_issues}] {key}: {str(e)}")
 
             except (json.JSONDecodeError, KeyError) as e:
                 logger.error(f"Error procesando respuesta de Jira: {e}")
-                print(f"ERROR procesando respuesta: {e}")
+                output.error(f"Error procesando respuesta: {e}")
                 return 1
         else:
             logger.error(f"Error en consulta Jira: Status {response.status_code}")
-            print(f"ERROR: Status {response.status_code}")
-            print(f"Respuesta: {response.text[:200]}")
+            output.error(f"Status {response.status_code}")
+            output.info(f"Respuesta: {response.text[:200]}")
             return 1
 
-        # Resumen final
+        # Preparar estadísticas
         duration = time.time() - start_time
-        throughput = total_issues / duration if duration > 0 else 0
+        stats = {
+            'processed': total_issues,
+            'success': ficheros_procesados,
+            'failed': ficheros_fallidos,
+            'duration': duration,
+            'location': str(Config.DELIVS_JSON_DIR)
+        }
 
+        # Logging final
         logger.info("="*60)
         logger.info(f"Proceso completado: {ficheros_procesados} archivos generados")
         logger.info(f"Exitosos: {ficheros_procesados}, Fallidos: {ficheros_fallidos}")
-        logger.info(f"Duración: {duration:.2f} segundos ({throughput:.2f} delivs/seg)")
+        logger.info(f"Duración: {duration:.2f} segundos")
         logger.info("="*60)
 
-        print("\n" + "="*60)
-        print(f"[OK] Proceso completado exitosamente")
-        print(f"  Deliveries procesadas: {total_issues}")
-        print(f"  Archivos generados: {ficheros_procesados}")
-        print(f"  Fallidos: {ficheros_fallidos}")
-        print(f"  Duracion: {duration:.2f} segundos")
-        print(f"  Rendimiento: {throughput:.2f} deliveries/segundo")
-        print(f"  Ubicacion: {Config.DELIVS_JSON_DIR}")
-        print("="*60)
+        # Mostrar resumen
+        output.summary(stats, "RESUMEN FINAL - DELIVERIES")
 
         return 0
 
     except Exception as e:
         logger.error(f"Error inesperado: {e}", exc_info=True)
-        print(f"\nERROR INESPERADO: {e}")
+        output.error(f"ERROR INESPERADO: {e}")
         import traceback
         traceback.print_exc()
         return 1
