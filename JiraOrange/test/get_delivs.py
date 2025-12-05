@@ -1,6 +1,21 @@
 import json
 import JiraAPIHandler as jiraAPIHandler
 
+
+def mostrar_deliv(deliv):
+    max = deliv["total"]
+    for i in range(max):
+        contar = len(deliv["issues"][i]["fields"]["customfield_16304"])
+        if contar > 0:
+            for j in range(0, contar):
+                print("Bug:  %s - Deliv:  %s - Status: %s/%s " %  ( deliv["issues"][i]["fields"]["customfield_16304"][j]["key"],
+                                                                    deliv["issues"][i]["key"],
+                                                                    deliv["issues"][i]["fields"]["status"]["name"],
+                                                                    deliv["issues"][i]["fields"]["customfield_16304"][j]["fields"]["status"]["name"]
+                                                                    )
+            )
+    
+
 def main():
     # inicializamos Jira
     print("Inicio")
@@ -13,10 +28,9 @@ def main():
         issue = json.loads(response.text)
     
     print(json.dumps(issue, sort_keys=True, indent=4, separators=(",", ": ")))
+    mostrar_deliv(issue)
     
-    # with open(configD.DIR_JIRA_OUT + "delivs_news.json", 'w') as file:
-    #     json.dump(issue, file)
-    # print("Fin")
+    print("Fin")
 
 if __name__ == '__main__':
     main()

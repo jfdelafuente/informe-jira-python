@@ -3,7 +3,9 @@ import configD
 import pandas as pd
 from utils.utils import extract_from_json
 
-def extract(file):
+
+
+def extract(file:str) -> pd.DataFrame:
     extracted_data = pd.DataFrame() 
     for jsonfile in glob.glob(file):
         new_dataframe = extract_from_json(jsonfile)
@@ -11,8 +13,9 @@ def extract(file):
 
     return extracted_data
 
-def extract_delivs():
+def extract_delivs() -> pd.DataFrame:
     return extract(configD.DIR_JIRA_DELIVS + '*.json')
+
 
 def extract_bugs() -> pd.DataFrame:
     return extract(configD.DIR_JIRA_BUGS + "*.json")

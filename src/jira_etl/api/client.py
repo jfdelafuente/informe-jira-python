@@ -245,8 +245,8 @@ class JiraAPIHandler:
                 f'{self.FIELD_PROJECT}'
             )
 
-        # Construir JQL
-        jql = f'Type = Bug AND ("{self.FIELD_REMEDY_HD}" ~ {remedy_id})'
+        # Construir JQL - usando comillas simples para el field name
+        jql = f'Type = Bug AND ({self.FIELD_REMEDY_HD} ~ {remedy_id})'
 
         query_args = {
             'jql': jql,
@@ -298,7 +298,7 @@ class JiraAPIHandler:
             )
 
         # Construir JQL con OR para múltiples incidencias
-        conditions = [f'"{self.FIELD_REMEDY_HD}" ~ {rid}' for rid in remedy_ids]
+        conditions = [f'{self.FIELD_REMEDY_HD} ~ {rid}' for rid in remedy_ids]
         jql = f'Type = Bug AND ({" OR ".join(conditions)}) ORDER BY cf[11104], status ASC'
 
         query_args = {
