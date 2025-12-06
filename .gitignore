@@ -150,6 +150,9 @@ logs/*.txt
 *.log
 *.txt
 
+# Excepciones: Permitir archivos de requirements
+!requirements*.txt
+
 # Mantener directorio de logs
 !logs/.gitkeep
 !logs/README.md
