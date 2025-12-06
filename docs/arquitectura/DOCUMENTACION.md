@@ -58,9 +58,9 @@ Guía completa de toda la documentación disponible del proyecto.
 
 **Uso:**
 ```bash
-python validar_entorno.py              # Validación completa
-python validar_entorno.py --verbose    # Más detalles
-python validar_entorno.py --skip-jira  # Sin probar Jira
+python scripts/validate_environment.py              # Validación completa
+python scripts/validate_environment.py --verbose    # Más detalles
+python scripts/validate_environment.py --skip-jira  # Sin probar Jira
 ```
 
 **Documentación:** [GUIA_VALIDACION.md](GUIA_VALIDACION.md)
@@ -201,7 +201,7 @@ pip install -r requirements.txt
 ### "Nunca he usado este proyecto"
 
 1. Lee [INICIO_RAPIDO.md](INICIO_RAPIDO.md)
-2. Ejecuta `python validar_entorno.py`
+2. Ejecuta `python scripts/validate_environment.py`
 3. Si hay problemas, consulta [GUIA_VALIDACION.md](GUIA_VALIDACION.md)
 
 ---
@@ -216,7 +216,7 @@ pip install -r requirements.txt
 
 ### "Tengo un error"
 
-1. Ejecuta `python validar_entorno.py --verbose`
+1. Ejecuta `python scripts/validate_environment.py --verbose`
 2. Lee el mensaje de error
 3. Busca la solución en [GUIA_VALIDACION.md](GUIA_VALIDACION.md)
 4. Revisa "Solución de Problemas" en [INICIO_RAPIDO.md](INICIO_RAPIDO.md)
@@ -228,14 +228,14 @@ pip install -r requirements.txt
 1. Lee [MEJORAS_FUTURAS.md](MEJORAS_FUTURAS.md)
 2. Elige una mejora del roadmap
 3. Implementa siguiendo el código de ejemplo
-4. Ejecuta `python validar_entorno.py` para validar
+4. Ejecuta `python scripts/validate_environment.py` para validar
 
 ---
 
 ### "Actualicé el proyecto"
 
 1. `pip install -r requirements.txt` (por si hay nuevas dependencias)
-2. `python validar_entorno.py` (validar que todo funciona)
+2. `python scripts/validate_environment.py` (validar que todo funciona)
 3. Lee [MEJORAS_IMPLEMENTADAS.md](MEJORAS_IMPLEMENTADAS.md) (ver qué cambió)
 
 ---
@@ -272,7 +272,7 @@ pip install -r requirements.txt
 | Necesito... | Ir a... |
 |-------------|---------|
 | Empezar YA | [INICIO_RAPIDO.md](INICIO_RAPIDO.md) |
-| Validar entorno | `python validar_entorno.py` |
+| Validar entorno | `python scripts/validate_environment.py` |
 | Resolver error | [GUIA_VALIDACION.md](GUIA_VALIDACION.md) |
 | Entender el proyecto | [README.md](README.md) |
 | Ver cambios recientes | [MEJORAS_IMPLEMENTADAS.md](MEJORAS_IMPLEMENTADAS.md) |
@@ -306,7 +306,7 @@ Si después de revisar toda la documentación sigues con dudas:
 
 1. **Valida tu entorno:**
    ```bash
-   python validar_entorno.py --verbose
+   python scripts/validate_environment.py --verbose
    ```
 
 2. **Verifica versiones:**

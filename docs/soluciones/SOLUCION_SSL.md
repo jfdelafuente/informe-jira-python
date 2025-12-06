@@ -31,7 +31,7 @@ JIRA_VERIFY_SSL=false
 #### Paso 2: Ejecuta tu script
 
 ```bash
-python validar_entorno.py
+python scripts/validate_environment.py
 ```
 
 ¡Listo! El cliente ahora acepta certificados auto-firmados.
@@ -103,7 +103,7 @@ python validar_entorno.py
 3. **Usar variable de entorno**:
    ```bash
    export REQUESTS_CA_BUNDLE=/ruta/al/jira-cert.crt
-   python validar_entorno.py
+   python scripts/validate_environment.py
    ```
 
 ---
@@ -129,7 +129,7 @@ status, bugs = jira.get_bug_to_json("INC000000012345")
 Una vez aplicada cualquier solución, ejecuta:
 
 ```bash
-python validar_entorno.py
+python scripts/validate_environment.py
 ```
 
 Deberías ver:
@@ -237,7 +237,7 @@ El servidor `jira.si.orange.es` es interno de Orange, así que es seguro deshabi
 
 2. Ejecuta:
    ```bash
-   python validar_entorno.py
+   python scripts/validate_environment.py
    ```
 
 ✅ **Problema resuelto**

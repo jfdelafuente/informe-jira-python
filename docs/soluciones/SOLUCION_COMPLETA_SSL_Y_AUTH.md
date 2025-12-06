@@ -151,7 +151,7 @@ Usuario autenticado: Juan De La Fuente
 ### Prueba Completa
 
 ```bash
-python validar_entorno.py
+python scripts/validate_environment.py
 ```
 
 Debería mostrar:
@@ -218,7 +218,7 @@ Ejecuta estos scripts para identificar el problema exacto.
 1. **Inmediato**: Genera un API Token de Jira
 2. **Actualizar**: Reemplaza PASSWORD en `.env` con el token
 3. **Probar**: Ejecuta `python test_auth.py`
-4. **Si funciona**: Ejecuta `python validar_entorno.py`
+4. **Si funciona**: Ejecuta `python scripts/validate_environment.py`
 5. **Si falla**: Contacta a TI de Orange para método de autenticación
 
 ---

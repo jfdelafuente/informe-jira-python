@@ -304,7 +304,7 @@ Después de instalar, verifica que todo funciona:
 
 ```bash
 # Opción 1: Script de validación
-python validar_entorno.py
+python scripts/validate_environment.py
 
 # Opción 2: Verificación manual
 python -c "

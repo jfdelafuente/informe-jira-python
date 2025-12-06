@@ -23,7 +23,7 @@ notepad .env
 # → Edita y guarda: USUARIO=tu_usuario y PASS=tu_password
 
 # 4. Validar entorno
-python validar_entorno.py
+python scripts/validate_environment.py
 
 # 5. Preparar archivo de entrada
 notepad in\incidencias_in.csv
@@ -51,7 +51,7 @@ nano .env
 # → Guarda: Ctrl+O, Enter, Ctrl+X
 
 # 4. Validar entorno
-python validar_entorno.py
+python scripts/validate_environment.py
 
 # 5. Preparar archivo de entrada
 nano in/incidencias_in.csv
@@ -169,7 +169,7 @@ PASS=tu_password_jira
 ### Paso 6: Validar Entorno
 
 ```bash
-python validar_entorno.py
+python scripts/validate_environment.py
 ```
 
 **Si todo está OK, verás:**
@@ -182,7 +182,7 @@ El proyecto está listo para ejecutarse.
 **Si hay errores:**
 - Lee los mensajes de error
 - Sigue las soluciones sugeridas
-- Vuelve a ejecutar `python validar_entorno.py`
+- Vuelve a ejecutar `python scripts/validate_environment.py`
 
 ---
 
@@ -337,7 +337,7 @@ Marca cada paso conforme lo completes:
 - [ ] Entorno virtual creado y activado
 - [ ] Dependencias instaladas (`pip install -r requirements.txt`)
 - [ ] Archivo `.env` creado con credenciales
-- [ ] Validación exitosa (`python validar_entorno.py`)
+- [ ] Validación exitosa (`python scripts/validate_environment.py`)
 - [ ] Archivo `in/incidencias_in.csv` creado con incidencias
 - [ ] Script `jira_bugs_to_json.py` ejecutado sin errores
 - [ ] Script `jira_bugs_etl.py` ejecutado sin errores
@@ -448,7 +448,7 @@ icacls . /grant Users:F /T
 1. python -m venv venv && source venv/bin/activate
 2. pip install -r requirements.txt
 3. cp .env.example .env && nano .env
-4. python validar_entorno.py
+4. python scripts/validate_environment.py
 ```
 
 ### Cada Ejecución
@@ -517,7 +517,7 @@ git pull  # Si usas Git
 pip install -r requirements.txt
 
 # Validar que todo sigue OK
-python validar_entorno.py
+python scripts/validate_environment.py
 ```
 
 ---
@@ -547,7 +547,7 @@ Si después de seguir esta guía sigues teniendo problemas:
 
 1. **Ejecuta validación detallada:**
    ```bash
-   python validar_entorno.py --verbose
+   python scripts/validate_environment.py --verbose
    ```
 
 2. **Revisa los logs:**
@@ -574,7 +574,7 @@ source venv/bin/activate              # Linux/Mac
 venv\Scripts\activate                 # Windows
 
 # Validar entorno
-python validar_entorno.py
+python scripts/validate_environment.py
 
 # Extraer bugs
 python JiraOrange/jira_bugs_to_json.py

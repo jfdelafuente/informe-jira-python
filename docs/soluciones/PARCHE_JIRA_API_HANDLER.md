@@ -371,7 +371,7 @@ python -m py_compile JiraOrange/api/JiraAPIHandler.py
 python -c "from JiraOrange.api.JiraAPIHandler import JiraAPIHandler; print('OK')"
 
 # Ejecutar validación
-python validar_entorno.py
+python scripts/validate_environment.py
 ```
 
 ---

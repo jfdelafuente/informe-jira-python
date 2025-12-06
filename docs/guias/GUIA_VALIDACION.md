@@ -11,7 +11,7 @@ Es un script de diagnóstico que verifica que tu entorno esté correctamente con
 ### Validación Completa
 
 ```bash
-python validar_entorno.py
+python scripts/validate_environment.py
 ```
 
 Verifica todos los componentes del sistema.
@@ -19,7 +19,7 @@ Verifica todos los componentes del sistema.
 ### Con Información Detallada
 
 ```bash
-python validar_entorno.py --verbose
+python scripts/validate_environment.py --verbose
 ```
 
 Muestra información adicional sobre cada componente verificado.
@@ -27,7 +27,7 @@ Muestra información adicional sobre cada componente verificado.
 ### Sin Probar Conexión a Jira
 
 ```bash
-python validar_entorno.py --skip-jira
+python scripts/validate_environment.py --skip-jira
 ```
 
 Útil si no tienes conectividad en el momento pero quieres verificar el resto.
@@ -337,7 +337,7 @@ El script retorna códigos de salida útiles para scripts:
 ```bash
 #!/bin/bash
 
-python validar_entorno.py
+python scripts/validate_environment.py
 if [ $? -eq 0 ]; then
     echo "Ejecutando ETL..."
     python JiraOrange/jira_bugs_etl.py
@@ -395,7 +395,7 @@ jobs:
         with:
           python-version: '3.9'
       - run: pip install -r requirements.txt
-      - run: python validar_entorno.py --skip-jira
+      - run: python scripts/validate_environment.py --skip-jira
 ```
 
 ### ¿Cómo desactivo los colores?
@@ -404,10 +404,10 @@ Si no ves bien los colores en tu terminal:
 
 ```bash
 # Linux/Mac
-NO_COLOR=1 python validar_entorno.py
+NO_COLOR=1 python scripts/validate_environment.py
 
 # Windows
-set NO_COLOR=1 && python validar_entorno.py
+set NO_COLOR=1 && python scripts/validate_environment.py
 ```
 
 ---
@@ -432,7 +432,7 @@ nano .env  # Editar con tus credenciales
 python -c "import JiraOrange.configD"
 
 # 5. Validar
-python validar_entorno.py
+python scripts/validate_environment.py
 
 # 6. Si OK, ejecutar
 python JiraOrange/jira_bugs_to_json.py
@@ -443,14 +443,14 @@ python JiraOrange/jira_bugs_to_json.py
 ```bash
 cp .env.example .env
 nano .env  # Completar USUARIO y PASS
-python validar_entorno.py
+python scripts/validate_environment.py
 ```
 
 ### Solo Faltan Librerías
 
 ```bash
 pip install -r requirements.txt
-python validar_entorno.py
+python scripts/validate_environment.py
 ```
 
 ---
@@ -461,7 +461,7 @@ Si después de seguir esta guía sigues teniendo problemas:
 
 1. Ejecuta con `--verbose` para más información:
    ```bash
-   python validar_entorno.py --verbose
+   python scripts/validate_environment.py --verbose
    ```
 
 2. Revisa los archivos de documentación:

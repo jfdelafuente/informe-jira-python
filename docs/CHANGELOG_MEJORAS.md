@@ -274,7 +274,7 @@ Guía de correcciones mínimas urgentes (5 minutos)
 
 ### Estado Actual
 
-Ejecutando `python validar_entorno.py`:
+Ejecutando `python scripts/validate_environment.py`:
 
 ```
 [OK] Versión de Python                             [OK]
