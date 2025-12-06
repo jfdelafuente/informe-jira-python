@@ -156,9 +156,6 @@ def main():
 
     output.header("EXTRACCION DE BUGS DESDE JIRA")
 
-    if not HAS_COLORS:
-        output.info("Nota: Instala 'colorama' para ver con colores (pip install colorama)")
-
     start_time = time.time()
     archivo_entrada = Config.INPUT_FILE
 
