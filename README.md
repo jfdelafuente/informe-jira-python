@@ -30,7 +30,12 @@ source venv/bin/activate  # En Windows: venv\Scripts\activate
 
 # Instalar dependencias
 pip install -r requirements.txt
+
+# Si tienes problemas en Windows (sin compilador C++):
+# pip install -r requirements-compatible.txt
 ```
+
+> 📖 **Nota:** Para más información sobre dependencias, consulta [REQUIREMENTS.md](REQUIREMENTS.md)
 
 ### 2. Configuración
 
@@ -244,9 +249,10 @@ informe-jira-python/
 - `requests` - Cliente HTTP para Jira API
 - `pandas` - Procesamiento y análisis de datos
 - `python-dotenv` - Gestión de variables de entorno
+- `colorama` - Colores en terminal (multiplataforma)
 - `openpyxl` - Lectura/escritura de archivos Excel
 
-Ver [requirements.txt](requirements.txt) para la lista completa.
+📋 Ver [REQUIREMENTS.md](REQUIREMENTS.md) para guía completa de instalación y solución de problemas.
 
 ---
 
@@ -255,12 +261,17 @@ Ver [requirements.txt](requirements.txt) para la lista completa.
 ### Configurar Entorno de Desarrollo
 
 ```bash
-# Instalar dependencias de desarrollo
+# Instalar dependencias de desarrollo (incluye producción + dev tools)
+pip install -r requirements-dev.txt
+
+# O usando make (Linux/Mac)
 make install-dev
 
 # Instalar el paquete en modo editable
 pip install -e .
 ```
+
+> 📖 Consulta [REQUIREMENTS.md](REQUIREMENTS.md) para más opciones de instalación.
 
 ### Ejecutar Tests
 

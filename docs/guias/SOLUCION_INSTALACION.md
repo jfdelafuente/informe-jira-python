@@ -2,6 +2,8 @@
 
 Guía para resolver problemas comunes al instalar dependencias del proyecto.
 
+> 📖 **Consulta también:** [REQUIREMENTS.md](../../REQUIREMENTS.md) para información completa sobre dependencias
+
 ---
 
 ## ❌ Problema: "pip install -r requirements.txt" falla con pandas
@@ -52,8 +54,10 @@ pip install wheel
 pip install pandas==2.0.3
 
 # 4. Luego instalar el resto
-pip install requests python-dotenv openpyxl
+pip install requests python-dotenv colorama openpyxl
 ```
+
+> **Nota:** Desde la última actualización, `colorama` es una dependencia obligatoria para el OutputManager.
 
 ---
 
@@ -154,8 +158,12 @@ pip install -r requirements-compatible.txt
 # Si falla, instalar uno por uno
 pip install requests
 pip install python-dotenv
+pip install colorama
 pip install openpyxl
 pip install pandas==2.0.3
+
+# Verificar instalación
+python scripts/check_dependencies.py
 ```
 
 ### Linux (Ubuntu/Debian)
@@ -430,8 +438,35 @@ python -m pip install --upgrade pip setuptools wheel && (pip install -r requirem
 
 ---
 
+## ✅ Verificar Instalación Completa
+
+Después de instalar las dependencias, verifica que todo está correcto:
+
+```bash
+# Opción 1: Script de verificación (RECOMENDADO)
+python scripts/check_dependencies.py
+
+# Opción 2: Script de validación de entorno
+python scripts/validate_environment.py
+
+# Opción 3: Con make (Linux/Mac)
+make validate
+
+# Opción 4: Con PowerShell (Windows)
+.\run.ps1 check-deps
+```
+
+El script `check_dependencies.py` verifica:
+- ✓ Versión de Python (>= 3.8)
+- ✓ Dependencias principales instaladas
+- ✓ Versiones compatibles
+- ✓ Importación correcta de módulos del proyecto
+
+---
+
 ## 🔗 Enlaces Útiles
 
+- [REQUIREMENTS.md](../../REQUIREMENTS.md) - Guía completa de dependencias
 - [pandas Installation](https://pandas.pydata.org/docs/getting_started/install.html)
 - [Visual C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
 - [Precompiled Wheels](https://www.lfd.uci.edu/~gohlke/pythonlibs/)
@@ -439,9 +474,10 @@ python -m pip install --upgrade pip setuptools wheel && (pip install -r requirem
 
 ---
 
-**Última actualización:** 2025-12-02
+**Última actualización:** 2025-12-07
 
 Si ninguna solución funciona, por favor:
-1. Ejecuta `python validar_entorno.py --verbose`
+1. Ejecuta `python scripts/check_dependencies.py`
 2. Copia el error completo
 3. Indica tu sistema operativo y versión de Python
+4. Consulta [REQUIREMENTS.md](../../REQUIREMENTS.md) para más opciones
